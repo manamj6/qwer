@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMart - Products</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Navbar */
+        nav {
+            background: #2e7d32;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px 50px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Categories */
+        .filters {
+            padding: 20px 50px;
+        }
+
+        .filters button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            background: #ddd;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .filters button:hover {
+            background: #2e7d32;
+            color: white;
+        }
+
+        /* Products */
+        .products {
+            padding: 20px 50px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h4 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .product-card button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            background: #ff9800;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product-card button:hover {
+            background: #e68900;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>SuperMart</h1>
+        <ul>
+            <li><a href="h.html">Home</a></li>
+            <li>Products</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <h2>Our Products</h2>
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button>All</button>
+        <button>Fruits</button>
+        <button>Vegetables</button>
+        <button>Dairy</button>
+        <button>Snacks</button>
+    </div>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+                <h4>Apples</h4>
+                <p class="price">Rs. 250/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1582515073490-dc9f7a7c36b4">
+                <h4>Potatoes</h4>
+                <p class="price">Rs. 80/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+                <h4>Milk</h4>
+                <p class="price">Rs. 180</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec">
+                <h4>Brown Bread</h4>
+                <p class="price">Rs. 120</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1604908176997-431b1c2a2c6b">
+                <h4>Bananas</h4>
+                <p class="price">Rs. 150/dozen</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1590080877777-5a6c7b3c0d6e">
+                <h4>Biscuits</h4>
+                <p class="price">Rs. 60</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SuperMart | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
